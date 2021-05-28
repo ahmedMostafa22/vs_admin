@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "822205611283",
+    "firebase_url": "https://virtualmall-5a21c-default-rtdb.firebaseio.com",
+    "project_id": "virtualmall-5a21c",
+    "storage_bucket": "virtualmall-5a21c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:822205611283:android:241eb43c89910491f06ee6",
+        "android_client_info": {
+          "package_name": "com.DefaultCompany.VirtualMall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "822205611283-a05llj51qllt35q9shb9pmi1500p576q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzGMeXBPK4pClirW0n3MmSzC1KDqJg6KQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "822205611283-a05llj51qllt35q9shb9pmi1500p576q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:822205611283:android:b0cf2d3bc080c5aaf06ee6",
+        "android_client_info": {
+          "package_name": "com.fcisgp.vs_admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "822205611283-a05llj51qllt35q9shb9pmi1500p576q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzGMeXBPK4pClirW0n3MmSzC1KDqJg6KQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "822205611283-a05llj51qllt35q9shb9pmi1500p576q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
