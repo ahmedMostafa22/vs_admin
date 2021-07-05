@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:vs_admin/constants.dart';
 import 'package:vs_admin/widgets/app_raised_btn.dart';
 
@@ -29,7 +30,10 @@ class _LoginState extends State<Login> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  SizedBox(height: 8.0),
+                  CircleAvatar(
+                      backgroundImage: AssetImage('images/appicon.jpg'),
+                      radius: Get.width*.2),
+                  SizedBox(height: 32.0),
                   TextFormField(
                     keyboardType: TextInputType.emailAddress,
                     validator: (val) =>
@@ -74,7 +78,7 @@ class _LoginState extends State<Login> {
                   AppRaisedButton(
                       txt: 'Login',
                       function: () {
-                        if (validate() && _email == 'admin@admin.com')
+                        if (validate())
                           try {
                             FirebaseAuth.instance.signInWithEmailAndPassword(
                                 email: _email, password: _password);

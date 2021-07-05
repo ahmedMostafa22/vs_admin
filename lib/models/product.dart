@@ -5,8 +5,7 @@ class Product {
   final String dbId, storeId;
   String discription, name, sprite, colors, size;
   final int id;
-  int quantity;
-  int price;
+  int quantity, price;
 
   Product(
       {this.colors,
@@ -20,28 +19,28 @@ class Product {
       this.quantity,
       this.price});
 
-   Product.fromJson(Map<String, dynamic> json) :
-      colors= json['colors'],
-      size= json['size'],
-      dbId= json['dbId'],
-      storeId= json['storeId'],
-      discription= json['discription'],
-      name= json['name'],
-      sprite= json['sprite'],
-      id= json['id'],
-      quantity= json['quantity'],
-      price= json['price'];
+  Product.fromJson(Map<String, dynamic> json)
+      : colors = json['colors'],
+        size = json['size'],
+        dbId = json['dbId'],
+        storeId = json['storeId'],
+        discription = json['discription'],
+        name = json['name'],
+        sprite = json['sprite'],
+        id = json['id'],
+        quantity = json['quantity'],
+        price = json['price'];
 
   Map<String, dynamic> toJson() => {
-        'colors': this.colors,
-        'size': this.size,
-        'dbId': this.dbId,
-        'storeId': this.storeId,
-        'discription': this.discription,
-        'name': this.name,
-        'sprite': this.sprite,
-        'id': this.id,
-        'quantity': this.quantity,
-        'price': this.price
+        'colors': colors,
+        'size': size,
+        'dbId': dbId,
+        'storeId': storeId,
+        'discription': discription,
+        'name': name,
+        'sprite': sprite,
+        'id': id,
+        'quantity': quantity,
+        'price': price
       };
 }

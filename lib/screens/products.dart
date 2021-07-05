@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:vs_admin/constants.dart';
 import 'package:vs_admin/view_models/products.dart';
+import 'package:vs_admin/view_models/stores.dart';
 import 'package:vs_admin/widgets/product_item.dart';
 
 class Products extends StatefulWidget {
@@ -14,7 +15,9 @@ class _ProductsState extends State<Products> {
   void initState() {
     super.initState();
     Future.delayed(Duration.zero).then((value) =>
-        Provider.of<ProductsProvider>(context, listen: false).getProducts());
+        Provider.of<StoresProvider>(context, listen: false).getStores().then(
+            ((val) => Provider.of<ProductsProvider>(context, listen: false)
+                .getProducts(context))));
   }
 
   @override

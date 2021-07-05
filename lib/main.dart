@@ -5,11 +5,11 @@ import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:vs_admin/screens/login.dart';
+import 'package:vs_admin/screens/orders.dart';
 import 'package:vs_admin/view_models/orders.dart';
 import 'package:vs_admin/view_models/products.dart';
 import 'package:vs_admin/view_models/stores.dart';
 import 'constants.dart';
-import 'screens/home.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -50,7 +50,7 @@ class AuthStateRouter extends StatelessWidget {
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting)
             return CircularProgressIndicator();
-          else if (snapshot.hasData) return Home();
+          else if (snapshot.hasData) return Orders();
           return Login();
         },
       )),

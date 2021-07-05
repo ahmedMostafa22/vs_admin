@@ -37,8 +37,9 @@ class _BillItemState extends State<BillItem> {
                 child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-                      Text(product.name.trim()?? "NA",
-                          style: TextStyle(color: Colors.white70, fontSize: 16)),
+                      Text(product.name.trim() ?? "NA",
+                          style:
+                              TextStyle(color: Colors.white70, fontSize: 16)),
                       SizedBox(height: 8),
                       Text(
                         "Price " + product.price.toString() ?? "NA" + " EGP",
@@ -46,7 +47,14 @@ class _BillItemState extends State<BillItem> {
                       ),
                       SizedBox(height: 8),
                       Text('Qty : ' + widget.item.quantity.toString(),
-                          style: TextStyle(color: Colors.white70, fontSize: 16)),
+                          style:
+                              TextStyle(color: Colors.white70, fontSize: 16)),
+                      SizedBox(height: 8),
+                      Text(
+                          'Total : ' +
+                              (product.price * widget.item.quantity).toString(),
+                          style:
+                              TextStyle(color: Colors.white70, fontSize: 16)),
                     ]),
               ),
               Divider()

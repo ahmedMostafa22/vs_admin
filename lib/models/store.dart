@@ -16,16 +16,28 @@ class Store {
       this.index,
       this.level});
 
+  Store.fromJson(Map<String, dynamic> json)
+      : name = json['name'],
+        id = json['id'],
+        ownerId = json['ownerId'],
+        address = json['address'],
+        category = json['category'],
+        phoneNum = json['phoneNum'],
+        website = json['website'],
+        productsCount = json['productsCount'],
+        index = json['index'],
+        level = json['level'];
 
-  Store.fromJson(Map<String, dynamic> json) :
-        name= json['name'],
-        id= json['id'],
-        ownerId= json['ownerId'],
-        address= json['address'],
-        category= json['category'],
-        phoneNum= json['phoneNum'],
-        website= json['website'],
-        productsCount= json['productsCount'],
-        index= json['index'],
-        level= json['level'];
+  Map<String, dynamic> toJson() => {
+        'name': name,
+        'id': id,
+        'ownerId': ownerId,
+        'address': address,
+        'category': category,
+        'phoneNum': phoneNum,
+        'website': website,
+        'productsCount': productsCount,
+        'index': index,
+        'level': level
+      };
 }

@@ -21,7 +21,10 @@ class StoreItem extends StatelessWidget {
                   children: <Widget>[
                     GestureDetector(
                         onTap: () => Get.to(EditStore(store: store)),
-                        child: Icon(Icons.edit,color: Colors.white,)),
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Icon(Icons.edit,color: Colors.white,),
+                        )),
                     SizedBox(width: 8)
                   ]),
             ),
